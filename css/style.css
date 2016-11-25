@@ -1,0 +1,59 @@
+div{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.col-centered{
+    margin: 0 auto;
+}
+
+#draw-canvas{
+    display: block;
+    padding: 0;
+    background-color: blue;
+    width: 100%;
+}
+
+#log-box{
+    padding: 0;
+    width: 100%;
+    height: auto;
+    overflow: scroll;
+    background-color: red;
+}
+
+#draw-space{
+}
+
+@media screen and (min-width: 2px) {
+    #draw-canvas {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #draw-canvas {
+        width: 390px;
+        height: 390px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #draw-canvas {
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #draw-canvas {
+        width: 600px;
+        height: 600px;
+        margin: 0 auto;
+    }
+}
