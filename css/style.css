@@ -16,6 +16,13 @@ div{
     background-repeat: repeat;
 }
 
+.rounded-border{
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    border: 4px solid #4d384d;
+}
+
 .col-centered{
     margin: 0 auto;
 }
@@ -110,4 +117,18 @@ div{
     #log-box {
         height: 600px;
     }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,1); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,1); 
 }
