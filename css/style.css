@@ -2,58 +2,112 @@ div{
     margin: 0px;
     padding: 0px;
     border: 0px;
+    color: white;
+}
+
+#cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1000;
+    background-image: url(images/dark_embroidery.png);
+    background-repeat: repeat;
 }
 
 .col-centered{
     margin: 0 auto;
 }
 
-#draw-canvas{
-    display: block;
-    padding: 0;
-    background-color: blue;
-    width: 100%;
+#log-space{
+    display:block;
+    float:left;
 }
 
 #log-box{
     padding: 0;
-    width: 100%;
-    height: auto;
-    overflow: scroll;
-    background-color: red;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 #draw-space{
+    display: block;
+    float: left;
+}
+
+#draw-canvas{
+    display: block;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 2px) {
+    #draw-space{
+        width: 100%;
+    }
+    #log-space{
+        width: 100%;
+    }
     #draw-canvas {
         width: 400px;
         height: 400px;
         margin: 0 auto;
     }
+    #log-box {
+        height: 400px;
+    }
 }
 
 @media screen and (min-width: 768px) {
+    #draw-space{
+        width: 50%;
+    }
+    #log-space{
+        width: 50%;
+    }
     #draw-canvas {
         width: 390px;
         height: 390px;
         margin: 0 auto;
     }
+    #log-box {
+        height: 390px;
+    }
 }
 
 @media screen and (min-width: 992px) {
+    #draw-space{
+        width: 60%;
+    }
+    #log-space{
+        width: 40%;
+    }
     #draw-canvas {
         width: 500px;
         height: 500px;
         margin: 0 auto;
     }
+    #log-box {
+        height: 500px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
+    #draw-space{
+        width: 70%;
+    }
+    #log-space{
+        width: 30%;
+    }
     #draw-canvas {
         width: 600px;
         height: 600px;
         margin: 0 auto;
+    }
+    #log-box {
+        height: 600px;
     }
 }
