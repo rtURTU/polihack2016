@@ -48,11 +48,7 @@ div{
     border-radius: 15px 15px 15px 15px;
     -moz-border-radius: 15px 15px 15px 15px;
     -webkit-border-radius: 15px 15px 15px 15px;
-<<<<<<< HEAD
     border: 4px solid #FFD700;
-=======
-    border: 4px solid #4d384d;
->>>>>>> b4c8ed4e65432a18de60082750ee24c5ce1d9a2d
 }
 
 #content{
@@ -195,7 +191,6 @@ div{
     font-size: 3em;
     color: white;
 }
-<<<<<<< HEAD
 
 .glyphicon:hover{
     cursor: pointer;
@@ -217,5 +212,3 @@ div{
     color: goldenrod;
     text-decoration: none;
 }
-=======
->>>>>>> b4c8ed4e65432a18de60082750ee24c5ce1d9a2d
