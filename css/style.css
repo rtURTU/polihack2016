@@ -44,14 +44,9 @@ div{
     border-radius: 15px 15px 15px 15px;
     -moz-border-radius: 15px 15px 15px 15px;
     -webkit-border-radius: 15px 15px 15px 15px;
-<<<<<<< HEAD
     border: 4px solid #4d384d;
 }
-=======
-    border: 4px solid #FFD700;
-}
 
->>>>>>> 95a6821415f9e0b2cdb3a5ed6c25ebdae569582e
 #content{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -180,9 +175,3 @@ log-space > ::-webkit-scrollbar-thumb {
     color: white;
     background-color: white;
 }
-<<<<<<< HEAD
-body > ::-webkit-scrollbar{
-    
-}
-=======
->>>>>>> 95a6821415f9e0b2cdb3a5ed6c25ebdae569582e
