@@ -12,11 +12,19 @@ div{
     font-size: 3em;
 }
 
+#header{
+    background-color: black;
+}
+
+#content{
+    background-color: 1a1a1a;
+}
+
 #footer{
     height: 50px;
     font-family: 'Comfortaa', cursive;
     text-align: center;
-    background-color: red;
+    background-color: black;
     vertical-align: middle;
     line-height: 50px;
 }
@@ -36,8 +44,14 @@ div{
     border-radius: 15px 15px 15px 15px;
     -moz-border-radius: 15px 15px 15px 15px;
     -webkit-border-radius: 15px 15px 15px 15px;
+<<<<<<< HEAD
     border: 4px solid #4d384d;
 }
+=======
+    border: 4px solid #FFD700;
+}
+
+>>>>>>> 95a6821415f9e0b2cdb3a5ed6c25ebdae569582e
 #content{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -50,10 +64,10 @@ div{
 #log-space{
     display:block;
     float:left;
+    padding: 5px;
 }
 
 #log-box{
-    
     font-family: 'Comfortaa', cursive;
     padding: 0;
     width: 80%;
@@ -66,6 +80,7 @@ div{
 #draw-space{
     display: block;
     float: left;
+    padding: 5px;
 }
 
 #draw-canvas{
@@ -143,6 +158,12 @@ div{
 
 log-space > ::-webkit-scrollbar {
     width: 12px;
+    display: none;
+}
+
+#log-box::-webkit-scrollbar {
+    width: 12px;
+    display: block;
 }
  
 log-space > ::-webkit-scrollbar-track {
@@ -152,8 +173,16 @@ log-space > ::-webkit-scrollbar-track {
  
 log-space > ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,1); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,1);
 }
+
+.glyphicon{
+    color: white;
+    background-color: white;
+}
+<<<<<<< HEAD
 body > ::-webkit-scrollbar{
     
 }
+=======
+>>>>>>> 95a6821415f9e0b2cdb3a5ed6c25ebdae569582e
