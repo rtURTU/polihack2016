@@ -68,7 +68,7 @@ div{
 
 #log-box{
     font-family: 'Comfortaa', cursive;
-    padding: 0;
+    padding: 5px;
     width: 80%;
     display: block;
     margin: 0 auto;
@@ -91,8 +91,10 @@ div{
     display:inline-block;
     margin-top:10px;
     border-top:solid 3px black;
-    height:200px;
     width:100%;
+    padding-left: 50px;
+    padding-right: 20px;
+    font-size: 1.5em;
 }
 
 @media screen and (min-width: 2px) {
@@ -199,6 +201,7 @@ div{
 .menu-item-div{
     margin-left: 50px;
     padding: 0px;
+    display: none;
 }
 
 .menu-item{
@@ -212,3 +215,34 @@ div{
     color: goldenrod;
     text-decoration: none;
 }
+
+.recent-text{
+    color: red;
+}
+
+.subtitle {
+    display:block;
+    margin:0 auto;
+    margin-top:10px;
+    width:100%;
+    font-family: 'Comfortaa', cursive;
+    size: 1.5em;
+}
+
+.borderdiv:hover{
+    cursor: pointer;
+}
+
+.photo {
+    display:block;
+    float:none;
+    margin:0 auto;
+    width:100%;
+    height:300px;
+}
+
+img.imag {
+    width:95%;
+    height:300px;
+}
+
