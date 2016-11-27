@@ -21,10 +21,7 @@ function ClearScreen(){
     ctx.fillRect( 0 , 0 , 1000 , 1000 );
 }
 
-<<<<<<< HEAD
-function AddLogLine( newLine ){
-    document.getElementById( 'log-box' ).innerHTML = newLine + '<br>' + document.getElementById( 'log-box' ).innerHTML;
-=======
+
 function AddLogLine( newLine , reset ){
     if( reset == true ){
         var aux = document.getElementsByClassName( 'recent-text' );
@@ -34,7 +31,6 @@ function AddLogLine( newLine , reset ){
         }
     }
     document.getElementById( 'log-box' ).innerHTML = "<span class = 'recent-text'>" + newLine + "</span>" + '<br>' + document.getElementById( 'log-box' ).innerHTML;
->>>>>>> 598c1512a7057950a98db2314d8c4436dc0768be
 }
 
 function ChangeDescription( newDescription ){

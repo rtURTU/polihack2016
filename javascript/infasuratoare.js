@@ -69,16 +69,12 @@ function Solve( pas ){
             ctx.fillStyle = '#FFFFFF';
             ctx.fillRect( Qx[ i ] , Qy[ i ] , 1 , 1 );
         }
-<<<<<<< HEAD
-        AddLogLine( 'Pentru a efectua algoritmul de infasuratoare convexa avem nevoie de un set de puncte sortate crescator dupa cele doua coordonate.' );
-=======
         AddLogLine( 'Pentru a efectua algoritmul de infasuratoare convexa avem nevoie de un set de puncte sortate crescator dupa cele doua coordonate.' , true );
->>>>>>> 598c1512a7057950a98db2314d8c4436dc0768be
     }
     stiva.push( 0 );
     stiva.push( 1 );
     for( i = 2 ; i < Qx.length ; i++ ){
-<<<<<<< HEAD
+
         --pas;
         if( pas == 0 ){
             for( var j = 0 ; j < Qx.length ; j++ ){
@@ -89,9 +85,7 @@ function Solve( pas ){
                 DrawLine( Qx[ stiva[ j ] ] , Qy[ stiva[ j ] ] , Qx[ stiva[ j + 1 ] ] , Qy[ stiva[ j + 1 ] ] , '#FFFFFF' );
             }
         }
-=======
-        
->>>>>>> 598c1512a7057950a98db2314d8c4436dc0768be
+
         while( stiva.length > 1 && sarrus( Qx[ stiva[ stiva.length - 2 ] ] , Qy[ stiva[ stiva.length - 2 ] ] , Qx[ stiva[ stiva.length - 1 ] ] , Qy[ stiva[ stiva.length - 1 ] ] , Qx[ i ] , Qy[ i ] ) <= 0 ){
              --pas;
             if( pas == 0 ){
@@ -102,16 +96,14 @@ function Solve( pas ){
                 for( var j = 0 ; j < stiva.length - 1 ; j++ ){
                     DrawLine( Qx[ stiva[ j ] ] , Qy[ stiva[ j ] ] , Qx[ stiva[ j + 1 ] ] , Qy[ stiva[ j + 1 ] ] , '#FFFFFF' );
                 }
-<<<<<<< HEAD
-=======
+
                 AddLogLine( 'Punctul curent se afla la stanga fata de dreapta de referinta deci eliminam ultimul punct din infasuratoare.' , true );
->>>>>>> 598c1512a7057950a98db2314d8c4436dc0768be
+
             }
             stiva.pop();
         }
         stiva.push( i );
-<<<<<<< HEAD
-=======
+
         --pas;
         if( pas == 0 ){
             for( var j = 0 ; j < Qx.length ; j++ ){
@@ -123,7 +115,7 @@ function Solve( pas ){
             }
             AddLogLine( 'Punctul curent se afla la dreapta fata de dreapta de referinta deci o adaugam in infasuratoare.' , true );
         }
->>>>>>> 598c1512a7057950a98db2314d8c4436dc0768be
+
     }
     --pas;
     if( pas == 0 ){
@@ -134,10 +126,8 @@ function Solve( pas ){
         for( var j = 0 ; j < stiva.length - 1 ; j++ ){
             DrawLine( Qx[ stiva[ j ] ] , Qy[ stiva[ j ] ] , Qx[ stiva[ j + 1 ] ] , Qy[ stiva[ j + 1 ] ] , '#FFFFFF' );
         }
-<<<<<<< HEAD
-=======
+
         AddLogLine( 'Punctele de pe infasuratoarea convexa sunt unite si determina conturul acesteia.' , true );
->>>>>>> 598c1512a7057950a98db2314d8c4436dc0768be
         stopRun = true;
     }
 }
