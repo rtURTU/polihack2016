@@ -1,3 +1,0 @@
-Descriere
-
-Pentru a gasi elementul cu valoarea minima dintr-un set de elemente vom retine intr-o variabila auxiliara un element din valorile primite, iar apoi vom parcurge setul de elemente si vom compara valoarea fiecarui element cu valoarea elementului retinut in variabila auxiliara. Daca elementul cu care il comparam este mai mic il vom suprascrie in variabila auxiliara.
