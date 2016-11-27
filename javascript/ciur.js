@@ -25,7 +25,11 @@ function Solve( pas ){
             ctx.fillText( '' + v[ i ] , space * ( i - 10 ) + more , 2 * offsetY );
             ctx.fillText( '' + i , space * ( i - 10 ) + more , 2 * offsetY + 20 );
         }
+<<<<<<< HEAD
         AddLogLine( 'Initializam un vector cu 0, de lungimea pe care vrem sa aplicam algoritmul.' );
+=======
+        AddLogLine( 'Initializam un vector cu 0, de lungimea pe care vrem sa aplicam algoritmul.' , true );
+>>>>>>> 598c1512a7057950a98db2314d8c4436dc0768be
     }
     
     for( var i = 2 ; i <= 18 ; i++ ){
@@ -40,7 +44,11 @@ function Solve( pas ){
                     ctx.fillText( '' + v[ i ] , space * ( i - 10 ) + more , 2 * offsetY );
                     ctx.fillText( '' + i , space * ( i - 10 ) + more , 2 * offsetY + 20 );
                 }
+<<<<<<< HEAD
                 AddLogLine( 'Numarul ' + i + ' este prim, vom marca multiplii lui cu 1.' );
+=======
+                AddLogLine( 'Numarul ' + i + ' este prim, vom marca multiplii lui cu 1.' , true );
+>>>>>>> 598c1512a7057950a98db2314d8c4436dc0768be
             }
             for( var j = i + i ; j <= 18 ; j += i ){
                 --pas;
@@ -67,12 +75,20 @@ function Solve( pas ){
                         ctx.fillText( '1' , space * ( j - 10 ) + more , 2 * offsetY );
                         ctx.fillText( '' + j , space * ( j - 10 ) + more , 2 * offsetY + 20 );
                     }
+<<<<<<< HEAD
                     AddLogLine( 'Marcam numarul ' + j + ' ca fiind neprim.' );
+=======
+                    AddLogLine( 'Marcam numarul ' + j + ' ca fiind neprim.' , true );
+>>>>>>> 598c1512a7057950a98db2314d8c4436dc0768be
                 }
             }
         }else{
             if( pas == 0 ){
+<<<<<<< HEAD
                 AddLogLine( 'Numarul ' + i + ' are divizori proprii, deci nu este prim.' );
+=======
+                AddLogLine( 'Numarul ' + i + ' are divizori proprii, deci nu este prim.' , true );
+>>>>>>> 598c1512a7057950a98db2314d8c4436dc0768be
             }
         }
     }
@@ -84,7 +100,11 @@ function Solve( pas ){
                 aux = aux + ' ' + i;
             }
         }
+<<<<<<< HEAD
         AddLogLine( aux + '.' );
+=======
+        AddLogLine( aux + '.' , true );
+>>>>>>> 598c1512a7057950a98db2314d8c4436dc0768be
     }
 }
 

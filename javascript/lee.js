@@ -53,9 +53,15 @@ function Solve( posX, posY ) {
     ctx.fillText( '' + mat[posX][posY] , posX * celWidth + celWidth / 2, posY * celHeight + celHeight / 2);
     
     if (posX == finX && posY == finY)
+<<<<<<< HEAD
         AddLogLine("Am ajuns la destinatia " + posX + " , " + posY + " din matrice, cu distanta minima " + mat[posX][posY] + ".");
     else
         AddLogLine("Am facut un pas pe pozitia " + posX + " , " + posY + " din matrice, ajungand cu distanta minima " + mat[posX][posY] + ".");
+=======
+        AddLogLine("Am ajuns la destinatia " + posX + " , " + posY + " din matrice, cu distanta minima " + mat[posX][posY] + "." , true);
+    else
+        AddLogLine("Am facut un pas pe pozitia " + posX + " , " + posY + " din matrice, ajungand cu distanta minima " + mat[posX][posY] + "." , true);
+>>>>>>> 598c1512a7057950a98db2314d8c4436dc0768be
 }
 
 ct.onclick = function(){ Solve( Qx[nrPasi], Qy[nrPasi] ); };

@@ -216,6 +216,13 @@ div{
     text-decoration: none;
 }
 
+<<<<<<< HEAD
+=======
+.recent-text{
+    color: red;
+}
+
+>>>>>>> 598c1512a7057950a98db2314d8c4436dc0768be
 .subtitle {
     display:block;
     margin:0 auto;
@@ -238,7 +245,11 @@ div{
 }
 
 img.imag {
+<<<<<<< HEAD
     width:300px;
+=======
+    width:95%;
+>>>>>>> 598c1512a7057950a98db2314d8c4436dc0768be
     height:300px;
 }
 

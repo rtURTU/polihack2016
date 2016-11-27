@@ -14,6 +14,7 @@ function DrawLine( x1, y1, x2, y2, culoar) {
     ctx.closePath();
 }
 
+<<<<<<< HEAD
 AddLogLine('Consideram originea 150, 150 ca si punct pivot, cu ajutorul caruia vom calcula ariile triunghiurilor din care este construit poligonul.');
 
 function Solve( pas ) {
@@ -24,6 +25,21 @@ function Solve( pas ) {
         console.log(bonArie);
         console.log(pas);
 
+=======
+AddLogLine('Consideram originea 150, 150 ca si punct pivot, cu ajutorul caruia vom calcula ariile triunghiurilor din care este construit poligonul.', true);
+
+function Solve( pas ) {
+    for( var i = 0 ; i < Qx.length ; i++ ){
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fillRect( Qx[ i ] , Qy[ i ] , 1 , 1 );
+    }
+    if (nrPasi < Qx.length - 1) {
+        bonArie = 150 * Qy[nrPasi] + Qx[nrPasi] * Qy[nrPasi + 1] + 150 * Qx[nrPasi + 1] - Qx[nrPasi + 1] * Qy[nrPasi] - Qx[nrPasi] * 150 - 150 * Qy[nrPasi + 1];
+        console.log( 150 * Qy[nrPasi] + Qx[nrPasi] * Qy[nrPasi + 1] + 150 * Qx[nrPasi + 1] - Qx[nrPasi + 1] * Qy[nrPasi] - Qx[nrPasi] * 150 - 150 * Qy[nrPasi + 1] );
+        bonArie = bonArie / 2;
+        ariaTotala += bonArie;
+
+>>>>>>> 598c1512a7057950a98db2314d8c4436dc0768be
         DrawLine(150, 150, Qx[nrPasi], Qy[nrPasi], '#FFFFFF');
         DrawLine(Qx[nrPasi], Qy[nrPasi], Qx[nrPasi + 1], Qy[nrPasi + 1], '#FF0000');
         DrawLine(Qx[nrPasi + 1], Qy[nrPasi + 1], 150, 150, '#FFFFFF');
@@ -31,11 +47,19 @@ function Solve( pas ) {
         nrPasi++;
 
         if(bonArie > 0) {
+<<<<<<< HEAD
             AddLogLine('Originea se afla in dreapta segmentului, astfel adunam aria triunghiului la aria totala.');
             AddLogLine('Am adunat ' + bonArie + ' la aria poligonului. Aria curenta: ' + ariaTotala +'.');
         } else {
             AddLogLine('Originea se afla in stanga segmentului, astfel scadem aria triunghiului din aria totala.');
             AddLogLine('Am scazut ' + -bonArie + ' din aria poligonului. Aria curenta: ' + ariaTotala +'.');
+=======
+            AddLogLine('Originea se afla in dreapta segmentului, astfel adunam aria triunghiului la aria totala.' , true);
+            AddLogLine('Am adunat ' + bonArie + ' la aria poligonului. Aria curenta: ' + ariaTotala +'.', false);
+        } else {
+            AddLogLine('Originea se afla in stanga segmentului, astfel scadem aria triunghiului din aria totala.', true);
+            AddLogLine('Am scazut ' + -bonArie + ' din aria poligonului. Aria curenta: ' + ariaTotala +'.', false);
+>>>>>>> 598c1512a7057950a98db2314d8c4436dc0768be
         }
     }
 }

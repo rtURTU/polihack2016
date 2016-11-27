@@ -34,7 +34,11 @@ function Solve( v , d , pas ) {
         for ( var k = 0 ; k < d.length ; k++ ) {
             ctx.fillText( '' + d[ k ] , space * k + more , offsetY * 2);
         }
+<<<<<<< HEAD
         AddLogLine( 'Afisam setul de date initial. Urmarim sa interclasam cei doi vectori care sunt sortati crescatori in forma initiala. Vectorul rezultant va fi ordonat tot crescator.' );
+=======
+        AddLogLine( 'Afisam setul de date initial. Urmarim sa interclasam cei doi vectori care sunt sortati crescatori in forma initiala. Vectorul rezultant va fi ordonat tot crescator.' , true );
+>>>>>>> 598c1512a7057950a98db2314d8c4436dc0768be
     }
     
     i = 0; j = 0;
@@ -49,7 +53,11 @@ function Solve( v , d , pas ) {
             if (pas == 0) {
                 ctx.fillStyle = '#00FF00';
                 ctx.fillText( '' + v[ i - 1 ] , space * (i - 1) + more , offsetY );
+<<<<<<< HEAD
                 AddLogLine('Interclasam in vectorul rezultant elementul ' + i + ' din primul vector.');
+=======
+                AddLogLine('Interclasam in vectorul rezultant elementul ' + i + ' din primul vector.' , true);
+>>>>>>> 598c1512a7057950a98db2314d8c4436dc0768be
             }
         } else {
             res[i + j] = d[j];
@@ -58,7 +66,11 @@ function Solve( v , d , pas ) {
             if (pas == 0) {
                 ctx.fillStyle = '#00FF00';
                 ctx.fillText( '' + d[ j - 1 ] , space * (j - 1) + more , offsetY * 2 );
+<<<<<<< HEAD
                 AddLogLine('Interclasam in vectorul rezultant elementul ' + j + ' din al doilea vector.');
+=======
+                AddLogLine('Interclasam in vectorul rezultant elementul ' + j + ' din al doilea vector.' , true);
+>>>>>>> 598c1512a7057950a98db2314d8c4436dc0768be
             }
         }
         
